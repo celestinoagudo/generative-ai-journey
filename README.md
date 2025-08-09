@@ -1,1 +1,1 @@
-# Collection of projects to explore the world of Generative AI.
+## Collection of projects to explore the world of Generative AI.
