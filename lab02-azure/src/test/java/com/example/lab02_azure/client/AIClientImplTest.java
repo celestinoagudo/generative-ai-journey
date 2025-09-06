@@ -15,7 +15,7 @@ class AIClientImplTest {
 
     @Test
     void callApiTest() {
-        var response = client.callApi("I am going to Paris, what should I see?");
+        var response = client.callApi("Can you name five great lakes?");
         Assertions.assertThat(response).isNotBlank();
         System.out.println("The results of the call are: " + response);
     }

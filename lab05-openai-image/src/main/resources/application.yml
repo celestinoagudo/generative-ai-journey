@@ -1,0 +1,14 @@
+spring:
+  application.name: lab05-openai-image
+  main.web-application-type: none     # Do not start a web server.
+  ai:
+    retry:
+      max-attempts: 1           # Maximum number of retry attempts.
+    model.image: openai
+    openai:
+      image:
+        options:
+          n: 1                  # number of images to generate.
+          response_format: url  # or b64_json
+          size: 1792x1024       # or 1024x1024, 1024x1792
+          style: natural        # or vivid
