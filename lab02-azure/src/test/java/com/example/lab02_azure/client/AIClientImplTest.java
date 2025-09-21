@@ -39,6 +39,5 @@ class AIClientImplTest {
         Assertions.assertThat(response).isNotNull();
         Assertions.assertThat(response).contains(sampleResults);
         System.out.println("The results of the call are: " + response);
-
     }
 }

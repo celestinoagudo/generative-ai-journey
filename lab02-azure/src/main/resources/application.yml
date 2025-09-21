@@ -5,8 +5,12 @@ spring:
     retry:
       max-attempts: 1           # Maximum number of retry attempts.
     model.chat: azure-openai
+    embedding.transformer.enabled: false
     azure:
       openai:
+        embedding:
+          options:
+            model: text-embedding-ada-002
         chat:
           options:
             deployment-name: gpt-5-mini
