@@ -1,0 +1,17 @@
+spring:
+  application.name: sql-generator
+  main.web-application-type: none     # Do not start a web server.
+  ai:
+    embedding.transformer.enabled: false  # SpringAI provides a default embeddings model.  Disable this to force the use of a different model.
+    retry:
+      max-attempts: 1
+    model.embedding: openai
+    openai:
+      embedding:
+        options:
+          model: text-embedding-ada-002
+    redis:
+      uri: redis://localhost:6379  # Default.
+      index: default-index         # Default.
+      prefix: "default:"           # Default.
+      initializeSchema: true       # Potentially destructive.
